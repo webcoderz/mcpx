@@ -37,6 +37,7 @@ def create_interactive_job(
                             image=server.image,
                             tty=True,
                             stdin=True,
+                            command=server.args,
                             #command=command,  # e.g. ["sh", "-c", "while true; do ..."]
                             env=env_list,
                         )
